@@ -47,3 +47,48 @@ if (slices % people == 0) {
 } else {
     print("yes slices left")
 }
+
+// loop from 0 to 4
+for i in 0...4 {
+    print("Looping", i)
+}
+
+// loop from 10 to 14
+for i in 10..<15 {
+    print("Looping", i)
+}
+
+// loop from 67 to 62
+for i in (62...67).reversed() {
+    print("Reversed loop ", i)
+}
+
+
+// static list, unchangeable
+let schools:[String] = ["Seneca", "Humber", "George"]
+
+// dynamic list
+var cities:[String] = ["toronto", "Calgary", "Vancouver", "Edmonton"]
+
+// size of the list
+print("Number of schools", schools.count)
+print("Number of cities", cities.count)
+
+// display list
+for city in cities {
+    print(city)
+}
+
+// append to the list
+cities.append("London")
+
+// remove from the list
+cities.remove(at: 0)
+
+// remove all from the list
+cities.removeAll()
+
+for city in cities {
+    print(city)
+}
+
